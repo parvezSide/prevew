@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#images_configer .images_for {
+  width: calc(25% - 20px);
+  height: 380px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+#images_configer .images_for img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#images_configer {
+  background: #340202;
+}
+#images_configer .prevew_body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3.5px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+#images_configer .prevew_body img {
+  width: 330px;
+  border-radius: 5px;
+}
+.prevew_body .cross {
+  position: absolute;
+  color: white;
+  top: 6%;
+  right: 5%;
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.prevew_body .right {
+  position: absolute;
+  left: 67%;
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prevew_body .right:hover {
+  background: rgb(4, 176, 22);
+}
+.prevew_body .left {
+  position: absolute;
+  right: 67%;
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prevew_body .left:hover {
+  background: rgb(4, 176, 22);
+}
